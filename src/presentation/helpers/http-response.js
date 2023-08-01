@@ -21,9 +21,10 @@ module.exports = class HttpResponse {
     }
   }
 
-  static ok () {
+  static ok (acessToken) {
     return {
-      statusCode: 200
+      statusCode: 200,
+      body: acessToken
     }
   }
 }
