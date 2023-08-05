@@ -5,13 +5,15 @@
   "main": "index.js",
   "scripts": {
     "test": "jest  --silent --noStackTrace --passWithNoTests",
-    "test:unit":"npm test -- --watch -c jest-unit-config.js",
-    "test:integration":"npm test -- --watch -c jest-integration-config.js",
-    "test:staged":"npm test -- --findRelatedTests",
-    "test:ci":"npm test -- --coverage"
+    "test:unit": "npm test -- --watch -c jest-unit-config.js",
+    "test:integration": "npm test -- --watch -c jest-integration-config.js",
+    "test:staged": "npm test -- --findRelatedTests",
+    "test:ci": "npm test -- --coverage"
   },
-  "standard":{
-    "env":["jest"]
+  "standard": {
+    "env": [
+      "jest"
+    ]
   },
   "repository": {
     "type": "git",
@@ -28,5 +30,8 @@
     "jest": "^24.9.0",
     "lint-staged": "^9.4.3",
     "standard": "^17.1.0"
+  },
+  "dependencies": {
+    "validator": "^13.11.0"
   }
 }
