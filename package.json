@@ -4,9 +4,10 @@
   "description": "https://www.youtube.com/watch?v=vV1wQ6GFH0A&amp;list=PL9aKtVrF05DyEwK5kdvzrYXFdpZfj1dsG&amp;index=1",
   "main": "index.js",
   "scripts": {
-    "test": "jest --watchAll --silent",
-    "test:staged":"jest --passWithNoTests --findRelatedTests --silent --noStackTrace",
-    "test:ci":"jest --coverage --silent"
+    "test": "jest  --silent --noStackTrace --passWithNoTests",
+    "test:unit":"npm test -- --watch",
+    "test:staged":"npm test -- --findRelatedTests",
+    "test:ci":"npm test -- --coverage"
   },
   "standard":{
     "env":["jest"]
